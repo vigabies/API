@@ -8,11 +8,11 @@
 		<version>2.7.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.vigabies</groupId>
-	<artifactId>vitoriaAPI</artifactId>
+	<groupId>br.com.lucas</groupId>
+	<artifactId>clients-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>vitoriaAPI</name>
-	<description>Projeto feito sozinha.</description>
+	<name>clients-api</name>
+	<description>Spring Boot Project</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -27,18 +27,19 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.30</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-core -->
 		<dependency>
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
 			<version>5.2.3</version>
 		</dependency>
-
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -52,6 +53,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>${project.parent.version}</version>
 			</plugin>
 		</plugins>
 	</build>
