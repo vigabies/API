@@ -1,5 +1,7 @@
 package br.com.vigabies.vitoriaAPI.Model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Objects;
 
@@ -15,6 +17,7 @@ public class Contato {
     private String descricao;
     private String contato;
 
+    @JsonIgnore
     @ManyToOne
 
     @JoinColumn (name="clienteid")

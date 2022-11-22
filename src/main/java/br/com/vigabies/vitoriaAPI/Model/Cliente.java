@@ -1,5 +1,7 @@
 package br.com.vigabies.vitoriaAPI.Model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +17,7 @@ public class Cliente {
     private Long id;
     private String nomecliente;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "cliente" )
 
     private List<Cliente> cliente = new ArrayList<>();
